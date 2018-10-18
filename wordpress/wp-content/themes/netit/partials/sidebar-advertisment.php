@@ -1,0 +1,20 @@
+<hr />
+<ol>
+    <li>
+        adv1.
+    </li>
+    <li>
+        adv2.
+    </li>
+    <li>
+        adv3.
+    </li>
+    <li>
+        adv4.
+    </li>
+    <li>
+        adv5.
+    </li>
+</ol>
+<?php
+the_title();

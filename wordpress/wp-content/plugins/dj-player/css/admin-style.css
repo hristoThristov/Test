@@ -1,0 +1,53 @@
+.djpr_fileinfo{
+	position: relative;
+}
+
+.djpr_fileinfo_cont{
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.djpr_fileinfo p{
+	font-size: 15px;
+	color: #333;
+	margin: 0 0 3px 0;
+}
+
+.djpr_fileinfo .djpr_fileclose{
+	font-size: 14px;
+	color: red;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.djpr_checkbox{
+	margin: 20px 0;
+}
+
+#upload_djsong_external{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+/*Settings Page*/
+
+.djpr-settings-container{
+	padding: 30px 20px;
+	width: 96%;
+	background: #fff;
+	margin-top: 30px;
+}
+
+.djpr-settings-container tbody td{
+	position: relative;
+}
+
+input+.iris-picker{
+	position: absolute;
+	top: 45px;
+	left: 15px;
+	z-index: 100;
+}

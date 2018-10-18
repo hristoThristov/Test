@@ -1,0 +1,172 @@
+<?php
+if (!class_exists('aiobtnDialog')) {
+
+	class aiobtnDialog {
+  
+    /**
+     * Constructor
+     */
+    function __construct() {
+      //for all users
+      add_action('wp_ajax_nopriv_ajax_aiobtn_dialog', array( $this, 'ajax_aiobtn_dialog' ));
+      add_action('wp_ajax_nopriv_ajax_aiobtn_nonce', array( $this, 'ajax_aiobtn_nonce' ));
+      // for logged in users
+      add_action('wp_ajax_ajax_aiobtn_dialog', array( $this, 'ajax_aiobtn_dialog' ));
+      add_action('wp_ajax_ajax_aiobtn_nonce', array( $this, 'ajax_aiobtn_nonce' ));
+    }
+	
+		public function ajax_aiobtn_dialog() {
+			global $AIO_Buttons_Data;
+			global $AIO_Buttons_Path;
+			
+			if (!wp_verify_nonce( $_REQUEST['aiobtn_dialog_nonce'], 'aiobtn_dialog')) {
+				die(__('We\'re sorry, something went wrong with your request. Please contact support for further assistance.','aiobtn'));
+			}
+			
+			?>
+			<!DOCTYPE HTML>
+			<html lang="en-US">
+				<head>
+					<title><?php _e('All In One Buttons','aiobtn'); ?></title>
+					<meta charset="UTF-8">
+					<!-- StyleSheets -->
+					<link href="<?php echo $AIO_Buttons_Path . '/css/dialog.css' ?>" rel="stylesheet" type="text/css" />
+					<link href="<?php echo $AIO_Buttons_Path . '/css/display.css' ?>" rel="stylesheet" type="text/css" />
+					<link href="<?php echo $AIO_Buttons_Path . '/css/glyphicons.css' ?>" rel="stylesheet" type="text/css" />
+					<link href="<?php echo $AIO_Buttons_Path . '/css/glyphicons-social.css' ?>" rel="stylesheet" type="text/css" />
+					<!-- JavaScript -->
+					<?php wp_print_scripts('jquery'); ?>
+					<script type="text/javascript" src="<?php echo $AIO_Buttons_Path . '/js/libs/tiny_mce_popup.js' ?>"></script>					
+					<script type="text/javascript" src="<?php echo $AIO_Buttons_Path . '/js/dialog.min.js' ?>"></script>
+				</head>
+				<body class="aiobtnWindow">
+					<form id="aiobtn_Form">
+						<p class="header-form">
+							<label><?php _e('CREATE A BUTTON','aiobtn'); ?></label>
+						</p>
+						<div id="aiobtn_Options">
+						<?php
+							$html = '';
+							if(is_array($AIO_Buttons_Data) && array_key_exists('default_animation',$AIO_Buttons_Data)) {
+								$default_animation = $AIO_Buttons_Data['default_animation'];
+							} else {
+								$default_animation = 'flash';
+							}
+							$html .= $this->select_option('aiobtn_animation',__('ANIMATION:','aiobtn'),array('none' => __('None','aiobtn'),'flash' => __('Flash','aiobtn'),'bounce' => __('Bounce','aiobtn'),'pulse' => __('Pulse','aiobtn'),'shake' => __('Shake','aiobtn'),'swing' => __('Swing','aiobtn')),$default_animation);
+							$html .= $this->select_option('aiobtn_align',__('ALIGNMENT:','aiobtn'),array('none' => __('None','aiobtn'),'center' => __('Center','aiobtn'),'left' => __('Left','aiobtn'),'right' => __('Right','aiobtn')),'none');
+							if(is_array($AIO_Buttons_Data) && array_key_exists('default_color',$AIO_Buttons_Data)) {
+								$default_color = $AIO_Buttons_Data['default_color'];
+							} else {
+								$default_color = 'red';
+							}
+							$html .= $this->select_option('aiobtn_color',__('COLOR:','aiobtn'),array('black' => __('Black','aiobtn'),'blue' => __('Blue','aiobtn'),'brown' => __('Brown','aiobtn'),'gray' => __('Gray','aiobtn'),'green' => __('Green','aiobtn'),'orange' => __('Orange','aiobtn'),'pink' => __('Pink','aiobtn'),'purple' => __('Purple','aiobtn'),'red' => __('Red','aiobtn'),'yellow' => __('Yellow','aiobtn')),$default_color);
+							if(is_array($AIO_Buttons_Data) && array_key_exists('default_size',$AIO_Buttons_Data)) {
+								$default_size = $AIO_Buttons_Data['default_size'];
+							} else {
+								$default_size = 'small';
+							}
+							$html .= $this->select_option('aiobtn_size',__('SIZE:','aiobtn'),array('small' => __('Small','aiobtn'),'medium' => __('Medium','aiobtn'),'large' => __('Large','aiobtn')),$default_size);
+							$html .= $this->select_option('aiobtn_icon',__('ICON:','aiobtn'),array('none' => __('No icon','aiobtn'),'pinterest' => __('Pinterest','aiobtn'),'dropbox' => __('Dropbox','aiobtn'),'google-plus' => __('GooglePlus','aiobtn'),'jolicloud' => __('Jolicloud','aiobtn'),'yahoo' => __('Yahoo!','aiobtn'),'blogger' => __('Blogger','aiobtn'),'picasa' => __('Picasa','aiobtn'),'amazon' => __('Amazon','aiobtn'),'tumblr' => __('Tumblr','aiobtn'),'wordpress' => __('WordPress','aiobtn'),'instapaper' => __('Instapaper','aiobtn'),'evernote' => __('Evernote','aiobtn'),'xing' => __('Xing','aiobtn'),'zootool' => __('Zootool','aiobtn'),'dribbble' => __('Dribbble','aiobtn'),'deviantart' => __('Deviantart','aiobtn'),'read-it-later' => __('Read It Later','aiobtn'),'linked-in' => __('LinkedIn','aiobtn'),'forrst' => __('Forrst','aiobtn'),'pinboard' => __('Pinboard','aiobtn'),'behance' => __('Behance','aiobtn'),'github' => __('Github','aiobtn'),'youtube' => __('YouTube','aiobtn'),'skitch' => __('Skitch','aiobtn'),'foursquare' => __('Foursquare','aiobtn'),'quora' => __('Quora','aiobtn'),'badoo' => __('Badoo','aiobtn'),'spotify' => __('Spotify','aiobtn'),'stumbleupon' => __('Stumbleupon','aiobtn'),'readability' => __('Readability','aiobtn'),'facebook' => __('Facebook','aiobtn'),'twitter' => __('Twitter','aiobtn'),'instagram' => __('Instagram','aiobtn'),'posterous-spaces' => __('Posterous','aiobtn'),'vimeo' => __('Vimeo','aiobtn'),'flickr' => __('Flickr','aiobtn'),'last-fm' => __('Last FM','aiobtn'),'rss' => __('RSS','aiobtn'),'skype' => __('Skype','aiobtn'),'e-mail' => __('Email','aiobtn'),'vine' => __('Vine','aiobtn'),'myspace' => __('MySpace','aiobtn'),'goodreads' => __('Goodreads','aiobtn'),'apple' => __('Apple','aiobtn'),'windows' => __('Windows','aiobtn'),'yelp' => __('Yelp','aiobtn'),'playstation' => __('Playstation','aiobtn'),'xbox' => __('Xbox','aiobtn'),'android' => __('Android','aiobtn'),'ios' => __('iOS','aiobtn'),'wikipedia' => __('Wikipedia','aiobtn'),'pocket' => __('Pocket','aiobtn'),'steam' => __('Steam','aiobtn'),'souncloud' => __('SoundCloud','aiobtn'),'slideshare' => __('Slideshare','aiobtn'),'netflix' => __('Netflix','aiobtn'),'paypal' => __('PayPal','aiobtn'),'google-drive' => __('Google Drive','aiobtn'),'linux-foundation' => __('Linux','aiobtn'),'ebay' => __('eBay','aiobtn'),'glass' => __('Glass','aiobtn'),'leaf' => __('Leaf','aiobtn'),'dog' => __('Dog','aiobtn'),'user' => __('User','aiobtn'),'girl' => __('Girl','aiobtn'),'car' => __('Car','aiobtn'),'user-add' => __('Add User','aiobtn'),'user-remove' => __('Remove User','aiobtn'),'film' => __('Film','aiobtn'),'magic' => __('Magic','aiobtn'),'envelope' => __('Envelope','aiobtn'),'camera' => __('Camera','aiobtn'),'heart' => __('Heart','aiobtn'),'beach-umbrella' => __('Beach Umbrella','aiobtn'),'train' => __('Train','aiobtn'),'print' => __('Print','aiobtn'),'bin' => __('Bin','aiobtn'),'music' => __('Music','aiobtn'),'note' => __('Note','aiobtn'),'heart-empty' => __('Empty Heart','aiobtn'),'home' => __('Home','aiobtn'),'snowflake' => __('Snowflake','aiobtn'),'fire' => __('Fire','aiobtn'),'magnet' => __('Magnet','aiobtn'),'parents' => __('Parents','aiobtn'),'binoculars' => __('Binoculars','aiobtn'),'road' => __('Road','aiobtn'),'search' => __('Search','aiobtn'),'cars' => __('Cars','aiobtn'),'notes-2' => __('Note 2','aiobtn'),'pencil' => __('Pencil','aiobtn'),'bus' => __('Bus','aiobtn'),'wifi-alt' => __('WiFi Alternative','aiobtn'),'luggage' => __('Luggage','aiobtn'),'old-man' => __('Old Man','aiobtn'),'woman' => __('Woman','aiobtn'),'file' => __('File','aiobtn'),'coins' => __('Coins','aiobtn'),'airplane' => __('Airplane','aiobtn'),'notes' => __('Notes','aiobtn'),'stats' => __('Stats','aiobtn'),'charts' => __('Charts','aiobtn'),'pie-chart' => __('Pie Chart','aiobtn'),'group' => __('Group','aiobtn'),'keys' => __('Keys','aiobtn'),'calendar' => __('Calendar','aiobtn'),'router' => __('Router','aiobtn'),'camera-small' => __('Small Camera','aiobtn'),'star-empty' => __('Empty Star','aiobtn'),'star' => __('Star','aiobtn'),'link' => __('Link','aiobtn'),'eye-open' => __('Eye Open','aiobtn'),'eye-close' => __('Eye Close','aiobtn'),'alarm' => __('Alarm','aiobtn'),'clock' => __('Clock','aiobtn'),'stopwatch' => __('Stopwatch','aiobtn'),'projector' => __('Projector','aiobtn'),'history' => __('History','aiobtn'),'truck' => __('Truck','aiobtn'),'cargo' => __('Cargo','aiobtn'),'compass' => __('Compass','aiobtn'),'keynote' => __('Keynote','aiobtn'),'paperclip' => __('Paperclip','aiobtn'),'power' => __('Power','aiobtn'),'lightbulb' => __('Lightbulb','aiobtn'),'tag' => __('Tag','aiobtn'),'tags' => __('Tags','aiobtn'),'cleaning' => __('Cleaning','aiobtn'),'ruler' => __('Ruler','aiobtn'),'gift' => __('Gift','aiobtn'),'umbrella' => __('Umbrella','aiobtn'),'book' => __('Book','aiobtn'),'bookmark' => __('Bookmark','aiobtn'),'wifi' => __('WiFi','aiobtn'),'cup' => __('Cup','aiobtn'),'stroller' => __('Stroller','aiobtn'),'headphones' => __('Headphones','aiobtn'),'headset' => __('Headset','aiobtn'),'warning-sign' => __('Warning Sign','aiobtn'),'signal' => __('Signal','aiobtn'),'retweet' => __('Retweet','aiobtn'),'refresh' => __('Refresh','aiobtn'),'roundabout' => __('Roundabout','aiobtn'),'random' => __('Random','aiobtn'),'heat' => __('Heat','aiobtn'),'repeat' => __('Repeat','aiobtn'),'display' => __('Display','aiobtn'),'log-book' => __('Log Book','aiobtn'),'address-book' => __('Address Book','aiobtn'),'building' => __('Building','aiobtn'),'eyedropper' => __('Eyedropper','aiobtn'),'adjust' => __('Adjust','aiobtn'),'tint' => __('Tint','aiobtn'),'crop' => __('Crop','aiobtn'),'vector-path-square' => __('Square Vector Path','aiobtn'),'vector-path-circle' => __('Circle Vector Path','aiobtn'),'vector-path-polygon' => __('Polygon Vector Path','aiobtn'),'vector-path-line' => __('Line Vector Path','aiobtn'),'vector-path-curve' => __('Curve Vector Path','aiobtn'),'vector-path-all' => __('All Vector Path','aiobtn'),'font' => __('Font','aiobtn'),'italic' => __('Italic','aiobtn'),'bold' => __('Bold','aiobtn'),'text-underline' => __('Underline Text','aiobtn'),'text-strike' => __('Strike Text','aiobtn'),'text-height' => __('Text Height','aiobtn'),'text-width' => __('Text Width','aiobtn'),'text-resize' => __('Resize Text','aiobtn'),'left-indent' => __('Left Indent','aiobtn'),'right-indent' => __('Right Indent','aiobtn'),'align-left' => __('Left Align','aiobtn'),'align-center' => __('Center Align','aiobtn'),'align-right' => __('Right Align','aiobtn'),'justify' => __('Justify','aiobtn'),'list' => __('List','aiobtn'),'text-smaller' => __('Smaller Text','aiobtn'),'text-bigger' => __('Bigger Text','aiobtn'),'embed' => __('Embed','aiobtn'),'embed-close' => __('Close Embed','aiobtn'),'table' => __('Table','aiobtn'),'message-full' => __('Full Message','aiobtn'),'message-empty' => __('Empty Message','aiobtn'),'message-in' => __('Message In','aiobtn'),'message-out' => __('Message Out','aiobtn'),'message-plus' => __('Message Plus','aiobtn'),'message-minus' => __('Message Minus','aiobtn'),'message-ban' => __('Message Ban','aiobtn'),'message-flag' => __('Message Flag','aiobtn'),'message-lock' => __('Message Lock','aiobtn'),'message-new' => __('Message New','aiobtn'),'inbox' => __('Inbox','aiobtn'),'inbox-plus' => __('Inbox Plus','aiobtn'),'inbox-minus' => __('Inbox Minus','aiobtn'),'inbox-lock' => __('Inbox Lock','aiobtn'),'inbox-in' => __('Inbox In','aiobtn'),'inbox-out' => __('Inbox Out','aiobtn'),'cogwheel' => __('Cogwheel','aiobtn'),'cogwheels' => __('Cogwheels','aiobtn'),'picture' => __('Picture','aiobtn'),'adjust-alt' => __('Adjust Alternative','aiobtn'),'database-lock' => __('Database Lock','aiobtn'),'database-plus' => __('Database Plus','aiobtn'),'database-minus' => __('Database Minus','aiobtn'),'database-ban' => __('Database Ban','aiobtn'),'folder-open' => __('Folder Open','aiobtn'),'folder-plus' => __('Folder Plus','aiobtn'),'folder-minus' => __('Folder Minus','aiobtn'),'folder-lock' => __('Folder Lock','aiobtn'),'folder-flag' => __('Folder Flag','aiobtn'),'folder-new' => __('Folder New','aiobtn'),'edit' => __('Edit','aiobtn'),'new-window' => __('New Window','aiobtn'),'check' => __('Check','aiobtn'),'unchecked' => __('Unchecked','aiobtn'),'more-windows' => __('More Windows','aiobtn'),'show-big-thumbnails' => __('Show Big Thumbnails','aiobtn'),'show-thumbnails' => __('Show Thumbnails','aiobtn'),'show-thumbnails-with-lines' => __('Show Thumbnails with Lines','aiobtn'),'show-lines' => __('Show Lines','aiobtn'),'playlist' => __('Playlist','aiobtn'),'imac' => __('iMac','aiobtn'),'macbook' => __('Macbook','aiobtn'),'ipad' => __('iPad','aiobtn'),'iphone' => __('iPhone','aiobtn'),'iphone-transfer' => __('iPhone Transfer','aiobtn'),'iphone-exchange' => __('iPhone Exchange','aiobtn'),'ipod' => __('iPod','aiobtn'),'ipod-shuffle' => __('iPod Shuffle','aiobtn'),'ear-plugs' => __('Ear Plugs','aiobtn'),'record' => __('Record','aiobtn'),'step-backward' => __('Step Backward','aiobtn'),'fast-backward' => __('Fast Backward','aiobtn'),'rewind' => __('Rewind','aiobtn'),'play' => __('Play','aiobtn'),'pause' => __('Pause','aiobtn'),'stop' => __('Stop','aiobtn'),'forward' => __('Forward','aiobtn'),'fast-forward' => __('Fast Forward','aiobtn'),'step-forward' => __('Step Forward','aiobtn'),'eject' => __('Eject','aiobtn'),'facetime-video' => __('Facetime Video','aiobtn'),'download-alt' => __('Download Alternative','aiobtn'),'mute' => __('Mute','aiobtn'),'volume-down' => __('Volume Down','aiobtn'),'volume-up' => __('Volume Up','aiobtn'),'screenshot' => __('Screenshot','aiobtn'),'move' => __('Move','aiobtn'),'more' => __('More','aiobtn'),'brightness-reduce' => __('Reduce Brightness','aiobtn'),'brightness-increase' => __('Increase Brightness','aiobtn'),'circle-plus' => __('Circle Plus','aiobtn'),'circle-minus' => __('Circle Minus','aiobtn'),'circle-remove' => __('Circle Remove','aiobtn'),'circle-ok' => __('Circle OK','aiobtn'),'circle-question-mark' => __('Question Mark','aiobtn'),'circle-info' => __('Circle Information','aiobtn'),'circle-exclamation-mark' => __('Circle Exclamation Mark','aiobtn'),'remove' => __('Remove','aiobtn'),'ok' => __('OK','aiobtn'),'ban' => __('Ban','aiobtn'),'download' => __('Download','aiobtn'),'upload' => __('Upload','aiobtn'),'shopping-cart' => __('Shopping Cart','aiobtn'),'lock' => __('Lock','aiobtn'),'unlock' => __('Unlock','aiobtn'),'electricity' => __('Electricity','aiobtn'),'ok-2' => __('OK Alternative','aiobtn'),'remove-2' => __('Remove Alternative','aiobtn'),'cart-out' => __('Cart Out','aiobtn'),'cart-in' => __('Cart In','aiobtn'),'left-arrow' => __('Left Arrow','aiobtn'),'right-arrow' => __('Right Arrow','aiobtn'),'down-arrow' => __('Down Arrow','aiobtn'),'up-arrow' => __('Up Arrow','aiobtn'),'resize-small' => __('Small Resize','aiobtn'),'resize-full' => __('Full Resize','aiobtn'),'circle-arrow-left' => __('Circle Arrow Left','aiobtn'),'circle-arrow-right' => __('Circle Arrow Right','aiobtn'),'circle-arrow-top' => __('Circle Arrow Top','aiobtn'),'circle-arrow-down' => __('Circle Arrow Down','aiobtn'),'play-button' => __('Play Button','aiobtn'),'unshare' => __('Unshare','aiobtn'),'share' => __('Share','aiobtn'),'chevron-right' => __('Chevron Right','aiobtn'),'chevron-left' => __('Chevron Left','aiobtn'),'bluetooth' => __('Bluetooth','aiobtn'),'euro' => __('Euro','aiobtn'),'usd' => __('USD','aiobtn'),'gbp' => __('GBP','aiobtn'),'retweet-2' => __('Retweet Alternative','aiobtn'),'moon' => __('Moon','aiobtn'),'sun' => __('Sun','aiobtn'),'cloud' => __('Cloud','aiobtn'),'direction' => __('Direction','aiobtn'),'brush' => __('Brush','aiobtn'),'pen' => __('Pen','aiobtn'),'zoom-in' => __('Zoom In','aiobtn'),'zoom-out' => __('Zoom Out','aiobtn'),'pin' => __('Pin','aiobtn'),'albums' => __('Albums','aiobtn'),'rotation-lock' => __('Rotation Lock','aiobtn'),'flash' => __('Flash','aiobtn'),'google-maps' => __('Google Maps','aiobtn'),'anchor' => __('Anchor','aiobtn'),'conversation' => __('Conversation','aiobtn'),'chat' => __('Chat','aiobtn'),'male' => __('Male','aiobtn'),'female' => __('Female','aiobtn'),'asterisk' => __('Asterisk','aiobtn'),'divide' => __('Divide','aiobtn'),'snorkel-diving' => __('Snorkel Diving','aiobtn'),'scuba-diving' => __('Scuba Diving','aiobtn'),'oxygen-bottle' => __('Oxygen Bottle','aiobtn'),'fins' => __('Fins','aiobtn'),'fishes' => __('Fishes','aiobtn'),'boat' => __('Boat','aiobtn'),'delete' => __('Delete','aiobtn'),'sheriffs-star' => __('Sheriffs Star','aiobtn'),'qrcode' => __('QR Code','aiobtn'),'barcode' => __('Barcode','aiobtn'),'pool' => __('Pool','aiobtn'),'buoy' => __('Buoy','aiobtn'),'spade' => __('Spade','aiobtn'),'bank' => __('Bank','aiobtn'),'vcard' => __('vCard','aiobtn'),'electrical-plug' => __('Electrical Plug','aiobtn'),'flag' => __('Flag','aiobtn'),'credit-card' => __('Credit Card','aiobtn'),'keyboard-wireless' => __('Wireless Keyboard','aiobtn'),'keyboard-wired' => __('Wired Keyboard','aiobtn'),'shield' => __('Shield','aiobtn'),'ring' => __('Ring','aiobtn'),'cake' => __('Cake','aiobtn'),'drink' => __('Drink','aiobtn'),'beer' => __('Beer','aiobtn'),'fast-food' => __('Fast Food','aiobtn'),'cutlery' => __('Cutlery','aiobtn'),'pizza' => __('Pizza','aiobtn'),'birthday-cake' => __('Birthday Cake','aiobtn'),'tablet' => __('Tablet','aiobtn'),'settings' => __('Settings','aiobtn'),'bullets' => __('Bullets','aiobtn'),'cardio' => __('Cardio','aiobtn'),'t-shirt' => __('T-Shirt','aiobtn'),'pants' => __('Pants','aiobtn'),'sweater' => __('Sweater','aiobtn'),'fabric' => __('Fabric','aiobtn'),'leather' => __('Leather','aiobtn'),'scissors' => __('Scissors','aiobtn'),'bomb' => __('Bomb','aiobtn'),'skull' => __('Skull','aiobtn'),'celebration' => __('Celebration','aiobtn'),'tea-kettle' => __('Tea Kettle','aiobtn'),'french-press' => __('French Press','aiobtn'),'coffee-cup' => __('Coffee Cup','aiobtn'),'pot' => __('Pot','aiobtn'),'grater' => __('Grater','aiobtn'),'kettle' => __('Kettle','aiobtn'),'hospital' => __('Hospital','aiobtn'),'hospital-h' => __('Hospital H','aiobtn'),'microphone' => __('Microphone','aiobtn'),'webcam' => __('Webcam','aiobtn'),'temple-christianity-church' => __('Christian Church','aiobtn'),'temple-islam' => __('Islamic Temple','aiobtn'),'temple-hindu' => __('Hindu Temple','aiobtn'),'temple-buddhist' => __('Buddhist Temple','aiobtn'),'bicycle' => __('Bicycle','aiobtn'),'life-preserver' => __('Life Preserver','aiobtn'),'share-alt' => __('Share Alternative','aiobtn'),'comments' => __('Comments','aiobtn'),'flower' => __('Flower','aiobtn'),'baseball' => __('Baseball','aiobtn'),'rugby' => __('Rugby','aiobtn'),'ax' => __('Ax','aiobtn'),'table-tennis' => __('Table Tennis','aiobtn'),'bowling' => __('Bowling','aiobtn'),'tree-conifer' => __('Conifer Tree','aiobtn'),'tree-deciduous' => __('Deciduous Tree','aiobtn'),'more-items' => __('More Items','aiobtn'),'sort' => __('Sort','aiobtn'),'filter' => __('Filter','aiobtn'),'gamepad' => __('Gamepad','aiobtn'),'playing-dices' => __('Playing Dices','aiobtn'),'calculator' => __('Calculator','aiobtn'),'tie' => __('Tie','aiobtn'),'wallet' => __('Wallet','aiobtn'),'piano' => __('Piano','aiobtn'),'sampler' => __('Sampler','aiobtn'),'podium' => __('Podium','aiobtn'),'soccer-ball' => __('Soccer Ball','aiobtn'),'blog' => __('Blog','aiobtn'),'dashboard' => __('Dashboard','aiobtn'),'certificate' => __('Certificate','aiobtn'),'bell' => __('Bell','aiobtn'),'candle' => __('Candle','aiobtn'),'pushpin' => __('Pushpin','aiobtn'),'iphone-shake' => __('Shake iPhone','aiobtn'),'pin-flag' => __('Pin Flag','aiobtn'),'turtle' => __('Turtle','aiobtn'),'rabbit' => __('Rabbit','aiobtn'),'globe' => __('Globe','aiobtn'),'briefcase' => __('Briefcase','aiobtn'),'hdd' => __('HDD','aiobtn'),'thumbs-up' => __('Thumbs Up','aiobtn'),'thumbs-down' => __('Thumbs Down','aiobtn'),'hand-right' => __('Hand Right','aiobtn'),'hand-left' => __('Hand Left','aiobtn'),'hand-up' => __('Hand Up','aiobtn'),'hand-down' => __('Hand Down','aiobtn'),'fullscreen' => __('Fullscreen','aiobtn'),'shopping-bag' => __('Shopping Bag','aiobtn'),'book-open' => __('Book Open','aiobtn'),'nameplate' => __('Nameplate','aiobtn'),'nameplate-alt' => __('Nameplate Alternative','aiobtn'),'vases' => __('Vases','aiobtn'),'bullhorn' => __('Bullhorn','aiobtn'),'dumbbell' => __('Dumbbell','aiobtn'),'suitcase' => __('Suitcase','aiobtn'),'file-import' => __('File Import','aiobtn'),'file-export' => __('File Export','aiobtn'),'bug' => __('Bug','aiobtn'),'crown' => __('Crown','aiobtn'),'smoking' => __('Smoking','aiobtn'),'cloud-download' => __('Cloud Download','aiobtn'),'cloud-upload' => __('Cloud Upload','aiobtn'),'restart' => __('Restart','aiobtn'),'security-camera' => __('Security Camera','aiobtn'),'expand' => __('Expand','aiobtn'),'collapse' => __('Collapse','aiobtn'),'collapse-top' => __('Collapse Top','aiobtn'),'globe-af' => __('Globe Africa','aiobtn'),'global' => __('Global','aiobtn'),'spray' => __('Spray','aiobtn'),'nails' => __('Nails','aiobtn'),'claw-hammer' => __('Claw Hammer','aiobtn'),'classic-hammer' => __('Classic Hammer','aiobtn'),'hand-saw' => __('Hand Saw','aiobtn'),'riflescope' => __('Riflescope','aiobtn'),'electrical-socket-eu' => __('European Electrical Socket','aiobtn'),'electrical-socket-us' => __('American Electrical Socket','aiobtn'),'message-forward' => __('Forward Message','aiobtn'),'coat-hanger' => __('Coat Hanger','aiobtn'),'dress' => __('Dress','aiobtn'),'bathrobe' => __('Bathrobe','aiobtn'),'shirt' => __('Shirt','aiobtn'),'underwear' => __('Underwear','aiobtn'),'log-in' => __('Log-in','aiobtn'),'log-out' => __('Log-out','aiobtn'),'exit' => __('Exit','aiobtn'),'new-window-alt' => __('New Window Alternative','aiobtn'),'video-sd' => __('Video SD','aiobtn'),'video-hd' => __('Video HD','aiobtn'),'subtitles' => __('Subtitles','aiobtn'),'sound-stereo' => __('Stereo Sound','aiobtn'),'sound-dolby' => __('Dolby Digital Sound','aiobtn'),'sound-5-1' => __('5.1 Sound','aiobtn'),'sound-6-1' => __('6.1 Sound','aiobtn'),'sound-7-1' => __('7.1 Sound','aiobtn'),'copyright-mark' => __('Copyright Mark','aiobtn'),'registration-mark' => __('Registration Mark','aiobtn'),'radar' => __('Radar','aiobtn'),'skateboard' => __('Skateboard','aiobtn'),'golf-course' => __('Golf Course','aiobtn'),'sorting' => __('Sorting','aiobtn'),'sort-by-alphabet' => __('Sort by Alphabet','aiobtn'),'sort-by-alphabet-alt' => __('Sort by Alhabet Alternative','aiobtn'),'sort-by-order' => __('Sort by Order','aiobtn'),'sort-by-order-alt' => __('Sort by Order Alternative','aiobtn'),'sort-by-attributes' => __('Sort by Attributes','aiobtn'),'sort-by-attributes-alt' => __('Sort by Attributes Alternative','aiobtn'),'compressed' => __('Compressed','aiobtn'),'package' => __('Package','aiobtn'),'cloud-plus' => __('Cloud Plus','aiobtn'),'cloud-minus' => __('Cloud Minus','aiobtn'),'disk-save' => __('Save Disk','aiobtn'),'disk-open' => __('Open Disk','aiobtn'),'disk-saved' => __('Saved Disk','aiobtn'),'disk-remove' => __('Remove Disk','aiobtn'),'disk-import' => __('Import Disk','aiobtn'),'disk-export' => __('Export Disk','aiobtn'),'tower' => __('Tower','aiobtn'),'send' => __('Send','aiobtn'),'git-branch' => __('Git Branch','aiobtn'),'git-create' => __('Git Create','aiobtn'),'git-private' => __('Git Private','aiobtn'),'git-delete' => __('Git Delete','aiobtn'),'git-merge' => __('Git Merge','aiobtn'),'git-pull-request' => __('Git Pull Request','aiobtn'),'git-compare' => __('Git Compare','aiobtn'),'git-commit' => __('Git Commit','aiobtn'),'construction-cone' => __('Construction Cone','aiobtn'),'shoe-steps' => __('Shoe Steps','aiobtn'),'plus' => __('Plus','aiobtn'),'minus' => __('Minus','aiobtn'),'redo' => __('Redo','aiobtn'),'undo' => __('Undo','aiobtn'),'golf' => __('Golf','aiobtn'),'hockey' => __('Hockey','aiobtn'),'pipe' => __('Pipe','aiobtn'),'wrench' => __('Wrench','aiobtn'),'folder-closed' => __('Folder Closed','aiobtn'),'phone-alt' => __('Phone Alternative','aiobtn'),'earphone' => __('Earphone','aiobtn'),'floppy-disk' => __('Floppy Disk','aiobtn'),'floppy-saved' => __('Saved Floppy Disk','aiobtn'),'floppy-remove' => __('Remove Floppy Disk','aiobtn'),'floppy-save' => __('Save Floppy Disk','aiobtn'),'floppy-open' => __('Open Floppy Disk','aiobtn'),'translate' => __('Translate','aiobtn'),'fax' => __('Fax','aiobtn'),'factory' => __('Factory','aiobtn'),'shop-window' => __('Shop Window','aiobtn'),'shop' => __('Shop','aiobtn'),'kiosk' => __('Kiosk','aiobtn'),'kiosk-wheels' => __('Kiosk Wheels','aiobtn'),'kiosk-light' => __('Light Kiosk','aiobtn'),'kiosk-food' => __('Food Kiosk','aiobtn'),'transfer' => __('Transfer','aiobtn'),'money' => __('Money','aiobtn'),'header' => __('Header','aiobtn'),'blacksmith' => __('Blacksmith','aiobtn'),'saw-blade' => __('Saw Blade','aiobtn'),'basketball' => __('Basketball','aiobtn'),'server' => __('Server','aiobtn'),'server-plus' => __('Server Plus','aiobtn'),'server-minus' => __('Server Minus','aiobtn'),'server-ban' => __('Server Ban','aiobtn'),'server-flag' => __('Server Flag','aiobtn'),'server-lock' => __('Server Lock','aiobtn'),'server-new' => __('Server New','aiobtn'),'charging-station' => __('Charging Station','aiobtn'),'gas-station' => __('Gas Station','aiobtn'),'target' => __('Target','aiobtn'),'bed-alt' => __('Bed Alternative','aiobtn'),'mosquito-net' => __('Mosquito Net','aiobtn'),'dining-set' => __('Dining Set','aiobtn'),'plate-of-food' => __('Plate of Food','aiobtn'),'hygiene-kit' => __('Hygiene Kit','aiobtn'),'blackboard' => __('Blackboard','aiobtn'),'marriage' => __('Marriage','aiobtn'),'bucket' => __('Bucket','aiobtn'),'none-color-swatch' => __('None Color Swatch','aiobtn'),'bring-forward' => __('Bring Forward','aiobtn'),'bring-to-front' => __('Bring to Front','aiobtn'),'send-backward' => __('Send Backward','aiobtn'),'send-to-back' => __('Send to Back','aiobtn'),'fit-frame-to-image' => __('Fit Frame to Image','aiobtn'),'fit-image-to-frame' => __('Fit Image to Frame','aiobtn'),'multiple-displays' => __('Multiple Displays','aiobtn'),'handshake' => __('Handshake','aiobtn'),'child' => __('Child','aiobtn'),'baby-formula' => __('Baby Formula','aiobtn'),'medicine' => __('Medicine','aiobtn'),'atv-vehicle' => __('ATV Vehicle','aiobtn'),'motorcycle' => __('Motorcycle','aiobtn'),'bed' => __('Bed','aiobtn'),'tent' => __('Tent','aiobtn'),'glasses' => __('Glasses','aiobtn'),'sunglasses' => __('Sunglasses','aiobtn'),'family' => __('Family','aiobtn'),'education' => __('Education','aiobtn'),'shoes' => __('Shoes','aiobtn'),'map' => __('Map','aiobtn'),'cd' => __('CD','aiobtn'),'alert' => __('Alert','aiobtn'),'piggy-bank' => __('Piggy Bank','aiobtn'),'star-half' => __('Half Star','aiobtn'),'cluster' => __('Cluster','aiobtn'),'flowchart' => __('Flowchart','aiobtn'),'commodities' => __('Commodities','aiobtn'),'duplicate' => __('Duplicate','aiobtn'),'copy' => __('Copy','aiobtn'),'paste' => __('Paste','aiobtn'),'bath-bathtub' => __('Bathtub Bath','aiobtn'),'bath-shower' => __('Shower Bath','aiobtn'),'shower' => __('Shower','aiobtn'),'menu-hamburger' => __('Menu Hamburger','aiobtn'),'option-vertical' => __('Option Vertical','aiobtn'),'option-horizontal' => __('Option Horizontal','aiobtn'),'currency-conversion' => __('Currency Conversion','aiobtn'),'user-ban' => __('User Ban','aiobtn'),'user-lock' => __('User Lock','aiobtn'),'user-flag' => __('User Flag','aiobtn'),'user-asterisk' => __('User Asterisk','aiobtn'),'user-alert' => __('User Lock','aiobtn'),'user-key' => __('User Key','aiobtn'),'user-conversation' => __('User Conversation','aiobtn'),'database' => __('Database','aiobtn'),'database-search' => __('Database Search','aiobtn'),'list-alt' => __('List Alternative','aiobtn'),'hazard-sign' => __('Hazard Sign','aiobtn'),'hazard' => __('Hazard','aiobtn'),'stop-sign' => __('Stop Sign','aiobtn'),'lab' => __('Lab','aiobtn'),'lab-alt' => __('Lab Alternative','aiobtn'),'ice-cream' => __('Ice Cream','aiobtn'),'ice-lolly' => __('Ice Lolly','aiobtn'),'ice-lolly-tasted' => __('Ice Lolly Tasted','aiobtn'),'invoice' => __('Invoice','aiobtn'),'cart-tick' => __('Shopping Countdown','aiobtn'),'hourglass' => __('Hourglass','aiobtn'),'cat' => __('Cat','aiobtn'),'lamp' => __('Lamp','aiobtn'),'scale-classic' => __('Classic Scale','aiobtn'),'eye-plus' => __('Eye Plus','aiobtn'),'eye-minus' => __('Eye Minus','aiobtn'),'quote' => __('Quote','aiobtn'),'bitcoin' => __('Bitcoin','aiobtn'),'yen' => __('Yen','aiobtn'),'ruble' => __('Ruble','aiobtn'),'erase' => __('Erase','aiobtn'),'podcast' => __('Podcast','aiobtn'),'firework' => __('Firework','aiobtn'),'scale' => __('Scale','aiobtn'),'king' => __('King','aiobtn'),'queen' => __('Queen','aiobtn'),'pawn' => __('Pawn','aiobtn'),'bishop' => __('Bishop','aiobtn'),'knight' => __('Knight','aiobtn'),'mic-mute' => __('Mute Microphone','aiobtn'),'voicemail' => __('Voicemail','aiobtn'),'paragraph' => __('Paragraph','aiobtn'),'person-walking' => __('Walking Person','aiobtn'),'person-wheelchair' => __('Wheelchair Person','aiobtn'),'underground' => __('Underground','aiobtn'),'car-hov' => __('High Occupancy Vehicle','aiobtn'),'car-rental' => __('Car Rental','aiobtn'),'transport' => __('Transport','aiobtn'),'taxi' => __('Taxi','aiobtn'),'ice-cream-no' => __('No Ice Cream','aiobtn'),'uk-rat-u' => __('United Kingdom Rated U','aiobtn'),'uk-rat-pg' => __('United Kingdom Rated PG','aiobtn'),'uk-rat-12a' => __('United Kingdom Rated 12A','aiobtn'),'uk-rat-12' => __('United Kingdom Rated 12','aiobtn'),'uk-rat-15' => __('United Kingdom Rated 15','aiobtn'),'uk-rat-18' => __('United Kingdom Rated 18','aiobtn'),'uk-rat-r18' => __('United Kingdom Rated R18','aiobtn'),'tv' => __('TV','aiobtn'),'sms' => __('SMS','aiobtn'),'mms' => __('MMS','aiobtn'),'us-rat-g' => __('United States Rated G','aiobtn'),'us-rat-pg' => __('United States Rated PG','aiobtn'),'us-rat-pg-13' => __('United States Rated PG-13','aiobtn'),'us-rat-restricted' => __('United States Rated R','aiobtn'),'us-rat-no-one-17' => __('United States Rated NC-17','aiobtn'),'equalizer' => __('Equalizer','aiobtn'),'speakers' => __('Speakers','aiobtn'),'remote-control' => __('Remote Control','aiobtn'),'remote-control-tv' => __('Remote Control TV','aiobtn'),'shredder' => __('Shredder','aiobtn'),'folder-heart' => __('Folder Heart','aiobtn'),'person-running' => __('Person Running','aiobtn'),'person' => __('Person','aiobtn'),'voice' => __('Voice','aiobtn'),'stethoscope' => __('Stethoscope','aiobtn'),'hotspot' => __('Hotspot','aiobtn'),'activity' => __('Activity','aiobtn'),'watch' => __('Watch','aiobtn'),'scissors-alt' => __('Scissors Alternative','aiobtn'),'car-wheel' => __('Car Wheel','aiobtn'),'chevron-up' => __('Chevron Down','aiobtn'),'chevron-down' => __('Chevron Down','aiobtn'),'superscript' => __('Superscript','aiobtn'),'subscript' => __('Subscript','aiobtn'),'text-size' => __('Text Size','aiobtn'),'text-color' => __('Text Color','aiobtn'),'text-background' => __('Text Background','aiobtn'),'modal-window' => __('Modal Window','aiobtn'),'newspaper' => __('Newspaper','aiobtn'),'tractor' => __('Tractor','aiobtn')),'none');
+							if(is_array($AIO_Buttons_Data) && array_key_exists('default_text',$AIO_Buttons_Data)) {
+								$default_text = $AIO_Buttons_Data['default_text'];
+							} else {
+								$default_text = __('Download Now','aiobtn');
+							}
+							$html .= $this->text_option('aiobtn_text',__('TEXT:','aiobtn'),$default_text);
+							$html .= $this->select_option('aiobtn_target',__('TARGET:','aiobtn'),array('_self' => __('_self','aiobtn'),'_blank' => __('_blank','aiobtn')),'_self');
+              $html .= $this->select_option('aiobtn_relationship',__('RELATIONSHIP:','aiobtn'),array('dofollow' => __('dofollow','aiobtn'),'nofollow' => __('nofollow','aiobtn'),'prefetch' => __('prefetch','aiobtn'),'noreferrer' => __('noreferrer','aiobtn'),'author' => __('author','aiobtn'),'bookmark' => __('bookmark','aiobtn'),'help' => __('help','aiobtn'),'search' => __('search','aiobtn'),'tag' => __('tag','aiobtn'),'next' => __('next','aiobtn'),'prev' => __('prev','aiobtn'),'license' => __('license','aiobtn'),'alternate' => __('alternate','aiobtn')),'dofollow');
+							$html .= $this->text_option('aiobtn_url',__('DESTINATION URL:','aiobtn'),'');
+							if (is_array($AIO_Buttons_Data) && array_key_exists('shortcode_name',$AIO_Buttons_Data)) {
+								$shortcode_name = $AIO_Buttons_Data['shortcode_name'];
+							} else {
+								$shortcode_name = 'aio_button';
+							}
+							$html .= $this->hidden_option('aiobtn_shortcode',$shortcode_name);
+							$html .= $this->start_footer();
+							$html .= $this->button('aiobtn_cancel','cancel',__('Cancel','aiobtn'),'#');
+							$html .= $this->button('aiobtn_insert','insert',__('Create Button','aiobtn'),'#');
+							$html .= $this->end_footer();
+							echo $html;
+						?>
+						</div>
+					</form>
+					<form id="aiobtn_Preview">
+						<div id="aiobtn_Live">
+							
+						</div>
+					</form>
+					<div style="clear:both;height:1px;">&nbsp;</div>
+				</body>
+			</html>
+			<?php
+			die();
+		}
+		
+		public function start_footer() {				
+			$html = '';
+			$html .= '<p class="footer-form">';
+			return $html;
+		}
+		
+		public function end_footer() {				
+			$html = '';
+			$html .= '</p>';
+			return $html;
+		}
+		
+		public function button($id,$class,$label,$href) {			
+			$html = '';
+			$html .= '<button id="'.$id.'" class="'.$class.'" href="'.$href.'">'.$label.'</button>';
+			return $html;
+		}
+		
+		public function hidden_option($id,$value) {
+			$html = '';
+			$html .= '<input id="'.$id.'" type="hidden" value="'.$value.'" />';
+			return $html;
+		}
+		
+		public function text_option($id,$label,$value,$default=false) {
+			//set optional default value
+			if($default){
+				$default = ' onfocus="if(this.value == this.defaultValue) { this.value = \'\'; }" onblur="if(this.value==\'\')this.value=this.defaultValue" ';
+			} else {
+				$default = ' ';
+			}
+			
+			$html = '';
+			$html .= '<p class="content-form">';
+			$html .= '<label for="'.$id.'">'.$label.'</label><br/>';
+			$html .= '<input id="'.$id.'" type="text"'.$default.'value="'.$value.'" size="45" />';
+			$html .= '</p>';
+			return $html;
+		}
+		
+		public function select_option($id,$label,$options,$selected=false) {			
+			$html = '';
+			$html .= '<p class="content-form">';
+			$html .= '<label for="'.$id.'">'.$label.'</label><br/>';
+			$html .= '<select id="'.$id.'">';
+			
+			if (is_array($options)) {
+				foreach ($options as $val=>$value) {
+					$html .= '<option value="' . $val . '" ' . ($val == $selected ? 'selected="selected"':'') . '>' . $value . '</option>';
+				}
+			}
+			
+			$html .= '</select></p>';
+
+			return $html;
+		}
+	
+		public function ajax_aiobtn_nonce() {
+			echo wp_create_nonce('aiobtn_dialog');
+			die();
+		}
+		
+	} // end class
+  
+	$aiobtn_dialog = new aiobtnDialog();
+  
+}
+?>

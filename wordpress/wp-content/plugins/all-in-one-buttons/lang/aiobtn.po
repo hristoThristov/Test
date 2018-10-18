@@ -1,0 +1,3014 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: All In One Buttons\n"
+"POT-Creation-Date: 2015-06-05 15:47-0600\n"
+"PO-Revision-Date: 2015-06-05 15:47-0600\n"
+"Last-Translator: \n"
+"Language-Team: WP Goods <contact@wpgoods.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: aio-buttons.php:57 inc/dialog/class.php:73 inc/shortcode/class.php:42
+msgid "Download Now"
+msgstr ""
+
+#: aio-buttons.php:124 inc/dialog/class.php:69
+msgid "Settings"
+msgstr ""
+
+#: aio-buttons.php:137 inc/dialog/class.php:69
+msgid "Twitter"
+msgstr ""
+
+#: inc/admin/class.php:504
+msgid "Settings saved."
+msgstr ""
+
+#: inc/admin/class.php:585
+msgid "Save Changes"
+msgstr ""
+
+#: inc/admin/class.php:915
+msgid "Delete this image"
+msgstr ""
+
+#: inc/admin/class.php:915 inc/admin/class.php:1544 inc/dialog/class.php:69
+msgid "Delete"
+msgstr ""
+
+#: inc/admin/class.php:984
+msgid "Cannot delete file. Something's wrong."
+msgstr ""
+
+#: inc/admin/class.php:1173 inc/admin/class.php:1215 inc/dialog/class.php:69
+msgid "Remove"
+msgstr ""
+
+#: inc/admin/class.php:1185
+msgid "Add"
+msgstr ""
+
+#: inc/admin/class.php:1540
+msgid "Uploaded files"
+msgstr ""
+
+#: inc/admin/class.php:1551
+msgid "Upload new files"
+msgstr ""
+
+#: inc/admin/class.php:1557
+msgid "Add more files"
+msgstr ""
+
+#: inc/admin/class.php:1651 inc/admin/class.php:1671
+msgid "Select a color"
+msgstr ""
+
+#: inc/admin/options.php:30 inc/admin/options.php:39
+msgid "Getting Started"
+msgstr ""
+
+#: inc/admin/options.php:31 inc/admin/options.php:47
+msgid "General Settings"
+msgstr ""
+
+#: inc/admin/options.php:40
+msgid ""
+"When you're working with new software, we understand that getting started is "
+"often the hardest part. That's why we've provided an overview of All In One "
+"Buttons to help you do just that. If you have any additional questions, "
+"please feel free to contact wpgoods.com for support. Thank you!"
+msgstr ""
+
+#: inc/admin/options.php:40
+msgid "All In One Buttons - Getting Started Guide"
+msgstr ""
+
+#: inc/admin/options.php:48
+msgid "Shortcode Name"
+msgstr ""
+
+#: inc/admin/options.php:48
+msgid "You can use this option to rename the WordPress shortcode."
+msgstr ""
+
+#: inc/admin/options.php:49 inc/dialog/class.php:55 inc/dialog/class.php:56
+msgid "None"
+msgstr ""
+
+#: inc/admin/options.php:49 inc/dialog/class.php:55 inc/dialog/class.php:69
+msgid "Flash"
+msgstr ""
+
+#: inc/admin/options.php:49 inc/dialog/class.php:55
+msgid "Bounce"
+msgstr ""
+
+#: inc/admin/options.php:49 inc/dialog/class.php:55
+msgid "Pulse"
+msgstr ""
+
+#: inc/admin/options.php:49 inc/dialog/class.php:55
+msgid "Shake"
+msgstr ""
+
+#: inc/admin/options.php:49 inc/dialog/class.php:55
+msgid "Swing"
+msgstr ""
+
+#: inc/admin/options.php:49
+msgid "Default Animation"
+msgstr ""
+
+#: inc/admin/options.php:49
+msgid "You can use this option to change the default animation."
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Black"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Blue"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Brown"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Gray"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Green"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Orange"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Pink"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Purple"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Red"
+msgstr ""
+
+#: inc/admin/options.php:50 inc/dialog/class.php:62
+msgid "Yellow"
+msgstr ""
+
+#: inc/admin/options.php:50
+msgid "Default Color"
+msgstr ""
+
+#: inc/admin/options.php:50
+msgid "You can use this option to change the default color."
+msgstr ""
+
+#: inc/admin/options.php:51 inc/dialog/class.php:68
+msgid "Small"
+msgstr ""
+
+#: inc/admin/options.php:51 inc/dialog/class.php:68
+msgid "Medium"
+msgstr ""
+
+#: inc/admin/options.php:51 inc/dialog/class.php:68
+msgid "Large"
+msgstr ""
+
+#: inc/admin/options.php:51
+msgid "Default Size"
+msgstr ""
+
+#: inc/admin/options.php:51
+msgid "You can use this option to change the default size."
+msgstr ""
+
+#: inc/admin/options.php:52
+msgid "Default Text"
+msgstr ""
+
+#: inc/admin/options.php:52
+msgid "You can use this option to change the default text."
+msgstr ""
+
+#: inc/admin/options.php:58
+msgid "Customer Support"
+msgstr ""
+
+#: inc/admin/options.php:59
+msgid ""
+"Thank you for downloading All In One Buttons. I really hope you're enjoying "
+"the product. Customer support is a top priority for WP Goods. Your enquiries "
+"will receive a personal response within 48 hours (2 working days)."
+msgstr ""
+
+#: inc/admin/options.php:59
+msgid ""
+"If you need help for any reason, please feel free to contact support through "
+"the WP Goods Ticksy support system. Just sign in with your Facebook or "
+"Twitter account (or register manually) and give us a shout at"
+msgstr ""
+
+#: inc/admin/options.php:59
+msgid "Once again, thank you!"
+msgstr ""
+
+#: inc/dialog/class.php:23
+msgid ""
+"We're sorry, something went wrong with your request. Please contact support "
+"for further assistance."
+msgstr ""
+
+#: inc/dialog/class.php:30
+msgid "All In One Buttons"
+msgstr ""
+
+#: inc/dialog/class.php:45
+msgid "CREATE A BUTTON"
+msgstr ""
+
+#: inc/dialog/class.php:55
+msgid "ANIMATION:"
+msgstr ""
+
+#: inc/dialog/class.php:56
+msgid "ALIGNMENT:"
+msgstr ""
+
+#: inc/dialog/class.php:56
+msgid "Center"
+msgstr ""
+
+#: inc/dialog/class.php:56
+msgid "Left"
+msgstr ""
+
+#: inc/dialog/class.php:56
+msgid "Right"
+msgstr ""
+
+#: inc/dialog/class.php:62
+msgid "COLOR:"
+msgstr ""
+
+#: inc/dialog/class.php:68
+msgid "SIZE:"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "ICON:"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "No icon"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pinterest"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Dropbox"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "GooglePlus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Jolicloud"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Yahoo!"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Blogger"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Picasa"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Amazon"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tumblr"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "WordPress"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Instapaper"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Evernote"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Xing"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Zootool"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Dribbble"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Deviantart"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Read It Later"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Forrst"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pinboard"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Behance"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Github"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "YouTube"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Skitch"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Foursquare"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Quora"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Badoo"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Spotify"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Stumbleupon"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Readability"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Facebook"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Instagram"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Posterous"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Vimeo"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Flickr"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Last FM"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "RSS"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Skype"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Email"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Vine"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "MySpace"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Goodreads"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Apple"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Windows"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Yelp"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Playstation"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Xbox"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Android"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "iOS"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Wikipedia"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pocket"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Steam"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "SoundCloud"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Slideshare"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Netflix"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "PayPal"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Google Drive"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Linux"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "eBay"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Glass"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Leaf"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Dog"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "User"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Girl"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Car"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Add User"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Remove User"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Film"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Magic"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Envelope"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Camera"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Heart"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Beach Umbrella"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Train"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Print"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bin"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Music"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Note"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Empty Heart"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Home"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Snowflake"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fire"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Magnet"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Parents"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Binoculars"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Road"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Search"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cars"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Note 2"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pencil"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "WiFi Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Luggage"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Old Man"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Woman"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "File"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Coins"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Airplane"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Notes"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Stats"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Charts"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pie Chart"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Group"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Keys"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Calendar"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Router"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Small Camera"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Empty Star"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Star"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Link"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Eye Open"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Eye Close"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Alarm"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Clock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Stopwatch"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Projector"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "History"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Truck"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cargo"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Compass"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Keynote"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Paperclip"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Power"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Lightbulb"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tag"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tags"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cleaning"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ruler"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Gift"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Umbrella"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Book"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bookmark"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "WiFi"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cup"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Stroller"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Headphones"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Headset"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Warning Sign"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Signal"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Retweet"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Refresh"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Roundabout"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Random"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Heat"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Repeat"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Display"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Log Book"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Address Book"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Building"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Eyedropper"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Adjust"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tint"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Crop"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Square Vector Path"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Vector Path"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Polygon Vector Path"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Line Vector Path"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Curve Vector Path"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "All Vector Path"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Font"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Italic"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bold"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Underline Text"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Strike Text"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Text Height"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Text Width"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Resize Text"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Left Indent"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Right Indent"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Left Align"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Center Align"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Right Align"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Justify"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "List"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Smaller Text"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bigger Text"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Embed"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Close Embed"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Table"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Full Message"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Empty Message"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Message In"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Message Out"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Message Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Message Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Message Ban"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Message Flag"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Message Lock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Message New"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Inbox"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Inbox Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Inbox Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Inbox Lock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Inbox In"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Inbox Out"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cogwheel"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cogwheels"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Picture"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Adjust Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Database Lock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Database Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Database Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Database Ban"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Folder Open"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Folder Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Folder Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Folder Lock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Folder Flag"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Folder New"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Edit"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "New Window"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Check"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Unchecked"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "More Windows"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Show Big Thumbnails"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Show Thumbnails"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Show Thumbnails with Lines"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Show Lines"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Playlist"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "iMac"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Macbook"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "iPad"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "iPhone"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "iPhone Transfer"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "iPhone Exchange"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "iPod"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "iPod Shuffle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ear Plugs"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Record"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Step Backward"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fast Backward"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Rewind"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Play"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pause"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Stop"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Forward"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fast Forward"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Step Forward"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Eject"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Facetime Video"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Download Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Mute"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Volume Down"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Volume Up"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Screenshot"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Move"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "More"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Reduce Brightness"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Increase Brightness"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Remove"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle OK"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Question Mark"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Information"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Exclamation Mark"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "OK"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ban"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Download"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Upload"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shopping Cart"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Lock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Unlock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Electricity"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "OK Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Remove Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cart Out"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cart In"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Left Arrow"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Right Arrow"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Down Arrow"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Up Arrow"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Small Resize"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Full Resize"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Arrow Left"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Arrow Right"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Arrow Top"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Circle Arrow Down"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Play Button"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Unshare"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Share"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Chevron Right"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Chevron Left"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bluetooth"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Euro"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "USD"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "GBP"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Retweet Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Moon"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sun"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cloud"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Direction"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Brush"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pen"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Zoom In"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Zoom Out"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pin"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Albums"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Rotation Lock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Google Maps"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Anchor"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Conversation"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Chat"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Male"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Female"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Asterisk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Divide"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Snorkel Diving"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Scuba Diving"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Oxygen Bottle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fins"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fishes"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Boat"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sheriffs Star"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "QR Code"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Barcode"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pool"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Buoy"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Spade"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bank"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "vCard"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Electrical Plug"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Flag"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Credit Card"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Wireless Keyboard"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Wired Keyboard"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shield"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ring"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cake"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Drink"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Beer"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fast Food"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cutlery"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pizza"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Birthday Cake"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tablet"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bullets"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cardio"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "T-Shirt"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pants"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sweater"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fabric"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Leather"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Scissors"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bomb"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Skull"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Celebration"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tea Kettle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "French Press"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Coffee Cup"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pot"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Grater"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Kettle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hospital"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hospital H"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Microphone"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Webcam"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Christian Church"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Islamic Temple"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hindu Temple"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Buddhist Temple"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bicycle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Life Preserver"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Share Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Comments"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Flower"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Baseball"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Rugby"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ax"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Table Tennis"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bowling"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Conifer Tree"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Deciduous Tree"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "More Items"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sort"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Filter"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Gamepad"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Playing Dices"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Calculator"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tie"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Wallet"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Piano"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sampler"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Podium"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Soccer Ball"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Blog"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Dashboard"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Certificate"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bell"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Candle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pushpin"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shake iPhone"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pin Flag"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Turtle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Rabbit"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Globe"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Briefcase"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "HDD"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Thumbs Up"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Thumbs Down"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hand Right"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hand Left"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hand Up"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hand Down"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fullscreen"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shopping Bag"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Book Open"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Nameplate"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Nameplate Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Vases"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bullhorn"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Dumbbell"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Suitcase"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "File Import"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "File Export"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bug"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Crown"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Smoking"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cloud Download"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cloud Upload"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Restart"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Security Camera"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Expand"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Collapse"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Collapse Top"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Globe Africa"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Global"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Spray"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Nails"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Claw Hammer"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Classic Hammer"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hand Saw"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Riflescope"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "European Electrical Socket"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "American Electrical Socket"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Forward Message"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Coat Hanger"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Dress"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bathrobe"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shirt"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Underwear"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Log-in"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Log-out"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Exit"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "New Window Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Video SD"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Video HD"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Subtitles"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Stereo Sound"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Dolby Digital Sound"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "5.1 Sound"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "6.1 Sound"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "7.1 Sound"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Copyright Mark"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Registration Mark"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Radar"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Skateboard"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Golf Course"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sorting"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sort by Alphabet"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sort by Alhabet Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sort by Order"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sort by Order Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sort by Attributes"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sort by Attributes Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Compressed"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Package"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cloud Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cloud Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Save Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Open Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Saved Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Remove Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Import Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Export Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tower"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Send"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Git Branch"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Git Create"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Git Private"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Git Delete"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Git Merge"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Git Pull Request"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Git Compare"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Git Commit"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Construction Cone"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shoe Steps"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Redo"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Undo"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Golf"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hockey"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pipe"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Wrench"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Folder Closed"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Phone Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Earphone"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Floppy Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Saved Floppy Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Remove Floppy Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Save Floppy Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Open Floppy Disk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Translate"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fax"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Factory"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shop Window"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shop"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Kiosk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Kiosk Wheels"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Light Kiosk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Food Kiosk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Transfer"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Money"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Header"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Blacksmith"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Saw Blade"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Basketball"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Server"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Server Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Server Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Server Ban"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Server Flag"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Server Lock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Server New"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Charging Station"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Gas Station"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Target"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bed Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Mosquito Net"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Dining Set"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Plate of Food"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hygiene Kit"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Blackboard"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Marriage"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bucket"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "None Color Swatch"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bring Forward"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bring to Front"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Send Backward"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Send to Back"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fit Frame to Image"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Fit Image to Frame"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Multiple Displays"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Handshake"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Child"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Baby Formula"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Medicine"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "ATV Vehicle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Motorcycle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bed"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tent"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Glasses"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Sunglasses"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Family"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Education"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shoes"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Map"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "CD"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Alert"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Piggy Bank"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Half Star"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cluster"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Flowchart"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Commodities"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Duplicate"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Copy"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Paste"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bathtub Bath"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shower Bath"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shower"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Menu Hamburger"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Option Vertical"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Option Horizontal"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Currency Conversion"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "User Ban"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "User Lock"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "User Flag"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "User Asterisk"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "User Key"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "User Conversation"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Database"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Database Search"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "List Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hazard Sign"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hazard"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Stop Sign"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Lab"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Lab Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ice Cream"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ice Lolly"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ice Lolly Tasted"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Invoice"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shopping Countdown"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hourglass"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Cat"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Lamp"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Classic Scale"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Eye Plus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Eye Minus"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Quote"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bitcoin"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Yen"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Ruble"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Erase"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Podcast"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Firework"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Scale"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "King"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Queen"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Pawn"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Bishop"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Knight"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Mute Microphone"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Voicemail"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Paragraph"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Walking Person"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Wheelchair Person"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Underground"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "High Occupancy Vehicle"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Car Rental"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Transport"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Taxi"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "No Ice Cream"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United Kingdom Rated U"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United Kingdom Rated PG"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United Kingdom Rated 12A"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United Kingdom Rated 12"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United Kingdom Rated 15"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United Kingdom Rated 18"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United Kingdom Rated R18"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "TV"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "SMS"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "MMS"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United States Rated G"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United States Rated PG"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United States Rated PG-13"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United States Rated R"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "United States Rated NC-17"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Equalizer"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Speakers"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Remote Control"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Remote Control TV"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Shredder"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Folder Heart"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Person Running"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Person"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Voice"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Stethoscope"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Hotspot"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Activity"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Watch"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Scissors Alternative"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Car Wheel"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Chevron Down"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Superscript"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Subscript"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Text Size"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Text Color"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Text Background"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Modal Window"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Newspaper"
+msgstr ""
+
+#: inc/dialog/class.php:69
+msgid "Tractor"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "TEXT:"
+msgstr ""
+
+#: inc/dialog/class.php:76
+msgid "TARGET:"
+msgstr ""
+
+#: inc/dialog/class.php:76
+msgid "_self"
+msgstr ""
+
+#: inc/dialog/class.php:76
+msgid "_blank"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "RELATIONSHIP:"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "dofollow"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "nofollow"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "prefetch"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "noreferrer"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "author"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "bookmark"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "help"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "search"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "tag"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "next"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "prev"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "license"
+msgstr ""
+
+#: inc/dialog/class.php:77
+msgid "alternate"
+msgstr ""
+
+#: inc/dialog/class.php:78
+msgid "DESTINATION URL:"
+msgstr ""
+
+#: inc/dialog/class.php:86
+msgid "Cancel"
+msgstr ""
+
+#: inc/dialog/class.php:87
+msgid "Create Button"
+msgstr ""

@@ -1,0 +1,7 @@
+@media only screen and (min-width: 480px) and (max-width: 1200px) {
+    .page-logreg form label,
+    .page-logreg form input {
+        grid-column-start: auto;
+        grid-column-end: span 2;
+    }
+}

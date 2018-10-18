@@ -1,0 +1,23 @@
+/*
+Theme Name: 2015 child
+Theme URI: http://netit.bg/
+Author: Victor Lazov
+Description: Test 2015 wordpress theme.
+Template:     twentyfifteen
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 2015-child
+
+kdsfhldskfjlkdsjlkds
+*/
+
+/* Проняна на цвета на sidebar елемента */
+.sidebar {
+    background-color: tomato;
+}
+
+/* Промяна на цвета на заглавието на единичните страници само */
+.single-post .site-content .entry-title {
+    color: blueviolet;
+}

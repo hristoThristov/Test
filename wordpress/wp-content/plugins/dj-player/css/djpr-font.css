@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'djpr-font';
+  src:  url('../font/djpr-font.eot?chx5mr');
+  src:  url('../font/djpr-font.eot?chx5mr#iefix') format('embedded-opentype'),
+    url('../font/djpr-font.ttf?chx5mr') format('truetype'),
+    url('../font/djpr-font.woff?chx5mr') format('woff'),
+    url('../font/djpr-font.svg?chx5mr#djpr-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i.djpr {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'djpr-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.djpr-pause-little:before {
+  content: "\e908";
+}
+.djpr-play-little:before {
+  content: "\e909";
+}
+.djpr-pause:before {
+  content: "\e907";
+}
+.djpr-download:before {
+  content: "\e900";
+}
+.djpr-play:before {
+  content: "\e901";
+}
+.djpr-previous:before {
+  content: "\e902";
+}
+.djpr-rewind-prev:before {
+  content: "\e903";
+}
+.djpr-sound:before {
+  content: "\e904";
+}
+.djpr-soundlow:before {
+  content: "\e905";
+}
+.djpr-soundnone:before {
+  content: "\e906";
+}

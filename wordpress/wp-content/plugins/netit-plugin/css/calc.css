@@ -1,0 +1,12 @@
+.calc-container {
+    width: 200px;
+}
+
+.calc-output {
+    width: 100%;
+}
+
+.calc-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

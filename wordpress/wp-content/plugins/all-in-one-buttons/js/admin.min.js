@@ -1,0 +1,1 @@
+(function($){"use strict";$(function(){$(document).ready(function(){setTimeout(function(){$("div.aiobtn-success").fadeOut("slow",function(){$("div.aiobtn-success").remove()})},4000)})})}(jQuery));
